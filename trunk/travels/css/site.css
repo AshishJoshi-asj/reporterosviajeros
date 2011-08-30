@@ -1,0 +1,15 @@
+body{
+	background-color: #909090;	
+	font-family: Helvetica, Arial, Serif;
+}
+
+#body_wrap {
+	width: 960px;
+	margin: 10px auto 10px auto;
+}
+	
+
+#newdiary {
+	margin: 10 0 0 0;
+	border: 1px dotted blue;
+}
