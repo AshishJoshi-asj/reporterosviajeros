@@ -1,0 +1,19 @@
+<h2>Home</h2>
+<p>This is the default home page...</p>
+
+
+<table>
+	<tr>
+		<th>Nombre</th>
+		<th>Apellidos</th>
+		<th>eMail</th>
+		<th>UserName</th>
+	</tr>
+	<?php echo $this->partialLoop('index/table-row.phtml', $this->members); ?>
+</table>
+
+
+<a href="login/index/index">about-index</a>
+
+
+<br>
