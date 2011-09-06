@@ -21,5 +21,24 @@ class Login_IndexController extends Zend_Controller_Action
     	$this->view->form = $frm;
 		
 	}
+	
+	public function recuperarAction()
+	{
+		$frm = new Form_RecuperarPassword();
+    	$frm->setAction('submit');
+    	$frm->setMethod('post');
+    	
+    	if ($this->getRequest()->isPost())
+    	{
+    		if ($frm->isValid($_POST))
+    		{
+    			$data = $frm->getValues();
+    		}
+    	}
+    
+    	
+    	$this->view->form = $frm;
+	
+	}
 }
 
