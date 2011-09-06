@@ -48,7 +48,7 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 	    return $autoloader;
 	}
 	
-	
+
 	
 	protected function _initView()
 	{
@@ -68,6 +68,17 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 		// Return it, so that is can be stored by the bootstrap
 		return $view;
 	}
+	
+	
+	protected function _initCommons()
+	{
+		$this->bootstrap('layout');
+        $layout = $this->getResource('layout');
+        $view = $layout->getView();
+
+		$view->setHelperPath(APPLICATION_PATH . '/commons/helpers', 'View_Helper');		
+	}
+	
 	
 	protected function _initNavigation()
 	{

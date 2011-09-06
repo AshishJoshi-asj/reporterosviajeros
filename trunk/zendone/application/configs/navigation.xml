@@ -1,28 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configdata>
     <nav>
-    	<home>
-	   		<label>Home</label>
-	   		<uri>/</uri>
-	   		
-	   		<pages>
-	   			<submit>
-			   		<label>Submit</label>
-			   		<uri>/bug/submit</uri>    	
-		    	</submit>
-		    	<about>
-			   		<label>About</label>
-			   		<uri>/index/about</uri>    	
-		    	</about>
-		    	<contact>
-			   		<label>Contact</label>
-			   		<uri>/index/contact</uri>    	
-			    </contact>
-		    	<registrar>
-			   		<label>Registrate</label>
-			   		<uri>/login</uri>
-			    </registrar>
-	   		</pages>    	
-    	</home>
+		<home>
+			<label>Home</label>
+			<uri>/</uri>
+	   	</home>
+	   	<diarios>
+			<label>Diarios</label>
+			<uri>/diarios</uri>
+	   	</diarios>
+	   	<submit>
+			<label>Submit</label>
+			<uri>/bug/submit</uri>    	
+			</submit>
+		<about>
+			<label>About</label>
+			<uri>/index/about</uri>    	
+		</about>
+		<contact>
+			<label>Contact</label>
+			<uri>/index/contact</uri>    	
+		</contact>
+		<registrar>
+			<label>Registrate</label>
+			<uri>/login</uri>
+		</registrar>
+		<sitemap>
+			<label>Site map</label>
+			<uri>/index/sitemap</uri>
+		</sitemap>
    	</nav>
 </configdata>
