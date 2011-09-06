@@ -15,33 +15,24 @@ class IndexController extends Zend_Controller_Action
 
     public function indexAction()
     {
-        // action body
-        $this->view->content = "Cadena de texto";       
-        $membershipModel = new Model_Membership();
-        $this->view->members = $membershipModel->fetchMembers();
+        
+        $usersModel = new Model_Users();
+        $this->view->users = $usersModel->getUsers();
         
         
         $createSnippet = $this->view->render('index/_sidebar.phtml');
-        
-        
-        
-        $this->view->layout()->subNav = $createSnippet ;
-        
-        //Zend_Debug::dump($createSnippet);
-        
+        $this->view->layout()->sideCol = $createSnippet ;
 
 	}
     
 	public function aboutAction()
 	{
-		$layout = $this->_helper->layout();
-		$layout->setLayout('yaml_01');
-		//$this->view->layout()->subNav = $this->view->render('index/_sidebar.phtml');
+		$this->view->layout()->sideCol = $this->view->render('index/_sidebar.phtml');
 	}
 	
 	public function contactAction()
 	{
-		$this->view->layout()->subNav = $this->view->render('index/_sidebar.phtml');
+		$this->view->layout()->sideCol = $this->view->render('index/_sidebar.phtml');
 	}
 	public function sitemapAction()
 	{

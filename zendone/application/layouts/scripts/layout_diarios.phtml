@@ -40,38 +40,23 @@
       <!--  begin: #main -->      
       <div id="main">
       
-        <div id="col1">
+		<div id="col1">
           <div id="col1_content" class="clearfix">
-          
-          	<!--  Main view content -->
-	        <?php echo $this->layout()->content; ?>&nbsp;
-	        
-	        <!--  begin: YAML subColumns -->
-	        <div class="subcolumns">
-			  <div class="c50l">
-			    <div class="subcl">
-			      <p>Contenido de la subdivision izquierda</p>
-			    </div>
-			  </div>
-			
-			  <div class="c50r">
-			    <div class="subcr">
-			      <p>Contenido de la subdivision derecha</p>
-			    </div>
-			  </div>		        
-        	</div>
-        	<!--  end: YAML subColumns -->
-        	       
+            <?php echo $this->layout()->content; ?>&nbsp;
           </div>
         </div>
-        
+        <div id="col2">
+          <div id="col2_content" class="clearfix">
+            <p>Contenido de la subdivision derecha</p>
+          </div>
+        </div>
         <div id="col3">
           <div id="col3_content" class="clearfix">
-		    <?php echo $this->layout()->sideCol;?>&nbsp;
+            <p>Contenido de la subdivision izquierda</p>
           </div>
           <!-- IE Column Clearing -->
           <div id="ie_clearing"> &#160; </div>
-        </div>
+        </div>      
         
       </div>
 
