@@ -203,12 +203,12 @@
   */
   
   .subcolumns {
-  	border: 1px solid #000;
+  	border: 0px solid #000;
   	height: 10px; 
   }
   
   .subcr {
-  	border: 1px solid #000;
+  	border: 0px solid #000;
   }
 
  /**
@@ -250,4 +250,89 @@
 	cursor: pointer;
 	text-shadow: #F0EFE7 1px 1px;  
   }
+
+	fieldset input.texto {
+		height: 1.5em;
+	}
+
+	.texto {
+		border-top: solid 1px #AAA;
+		border-left: solid 1px #AAA;
+		border-bottom: solid 1px #EEE;
+		border-right: solid 1px #EEE;
+		background: white url(http://cdn.viajeros.com/img/bg_campos.gif) no-repeat;
+		padding: 2px 2px 2px 3px;
+	}
+
+	.ml5 {
+		margin-left: 5px!important;
+	}
+
+	fieldset input, fieldset select, fieldset textarea {
+		display: block;
+		float: left;
+		margin-bottom: 5px;
+		display: inline;
+	}
+
+	form, table, td, input, textarea {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: inherit;
+		line-height: inherit;
+		color: #151515;
+	}
+  
+	form, table, td, input, textarea {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: inherit;
+		line-height: inherit;
+		color: #151515;
+	}
+
+	form {
+		margin: 0;
+		padding: 0;
+	}  
+  
+	h2, .h2 {
+		margin-bottom: 0.5em;
+		margin-top: 0.5em;
+		line-height: 1.3em;
+		font-weight: normal;
+		padding: 0;
+		letter-spacing: 0px;
+		color: #F26C04;
+	}
+	
+	.big {
+font-size: 1.2em;
+font-family: Tahoma, "Free Serif", "Lucida Grande", "Lucida Sans Unicode",sans-serif;
+font-weight: bold;
+}
+  
+  
+  .recuadro {
+	background: #F8F8F6;
+	margin-bottom: 12px;
+	position: relative;
+	padding: 9px 9px 5px 9px;
+	border: solid 1px #C1BFB3;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	-webkit-box-shadow: 0px 2px 3px #DDDDDD, inset 0px 0px 0px 1px #fff;
+	-moz-box-shadow: 0px 2px 3px #DDDDDD, inset 0px 0px 0px 1px #fff;
+	box-shadow: 0px 2px 3px #DDDDDD, inset 0px 0px 0px 1px #fff;
+  }  
+  
+  
+  .recuadro-destacado {
+	background-color: #DCF6FC;
+	border: solid 1px #6DCAE0;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #C8F1FA), color-stop(0.5, #DCF6FC), color-stop(1, #EFFBFE));
+	background-image: -moz-linear-gradient(top,#C8F1FA,#DCF6FC,#EFFBFE);
+	background-image: linear-gradient(top,#C8F1FA,#DCF6FC,#EFFBFE);
+	-pie-background: linear-gradient(top,#C8F1FA,#DCF6FC,#EFFBFE);
+  }
+  
 }
