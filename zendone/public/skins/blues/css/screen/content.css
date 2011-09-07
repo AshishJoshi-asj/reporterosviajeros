@@ -206,6 +206,10 @@
   	border: 1px solid #000;
   	height: 10px; 
   }
+  
+  .subcr {
+  	border: 1px solid #000;
+  }
 
  /**
   * (en) Emphasizing external Hyperlinks via CSS
@@ -225,4 +229,25 @@
     background-position:0 0.45em;
   }
   */
+  
+  .boton a {
+    text-decoration: none!important;
+	padding-left: 34px;
+	padding-top: 7px;	
+	display: block;	
+	height: 22px;
+	width: 131px;
+	/*
+	font-family: Tahoma, "Free Serif", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+	font-size: 11px;
+	*/
+	line-height: 1.2em;
+	/*
+	font-weight: bold;
+	color: black!important;
+	*/
+	background: url("../../images/btn_add2.gif") left 0px;
+	cursor: pointer;
+	text-shadow: #F0EFE7 1px 1px;  
+  }
 }
