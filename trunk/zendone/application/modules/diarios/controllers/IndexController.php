@@ -14,8 +14,10 @@ class Diarios_IndexController extends Zend_Controller_Action
 
     public function indexAction()
     {
-    	$usersModel = new Model_Diary();
-        $this->view->users = $usersModel->getUsers();
+    	$diaryModel = new Model_Diary();
+        $this->view->users = $diaryModel->getAll();
+        
+        $this->view->numDiarios = count($this->view->users);
         
         $this->_helper->layout()->setLayout('layout_diarios');
         
