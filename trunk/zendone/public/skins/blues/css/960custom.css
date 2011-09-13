@@ -1,0 +1,29 @@
+@CHARSET "ISO-8859-1";
+
+
+
+@import url(screen/nav_custom.css);
+
+/*
+@import url(screen/basemod.css);
+@import url(screen/content.css);
+
+
+*/
+
+
+#header{
+	border: 1px solid #000;
+	position: relative; 
+	padding: 45px 2em 1em 20px; 
+	color: #000; 
+	background:#edf2f8 url("../../images/bg_home_221.jpg"); repeat-x bottom left;  
+}
+
+#nav { overflow:hidden; }
+
+div.hlist { background: #004879 url("../../images/bg_nav.gif") repeat-x center; }
+
+#main { margin: 10px 0; background: #aaa; }
+
+#footer { padding: 10px 20px; color:#666; background: #f9f9f9; border-top: 5px #efefef solid; }

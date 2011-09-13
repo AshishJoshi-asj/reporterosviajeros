@@ -23,7 +23,7 @@ class Auth_RegistrarController extends Zend_Controller_Action
 	
 	            	// Todos los usuario que se registran através de este controller
     	        	// tendrán el role de usuario
-            		$data['role']  = 'user';
+            		$data['role']  = 'member';
             	            		
 	            	// Añadir la fecha de creación
 	            	$data['date_created'] = date( 'Y-m-d H:i:s');
