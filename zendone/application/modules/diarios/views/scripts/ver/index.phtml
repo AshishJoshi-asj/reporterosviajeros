@@ -1,0 +1,55 @@
+
+
+
+ 
+<div class="diario_wrap">
+	<div class="diario">
+ 
+			
+			<h2 class="titulo mt5"><?= $this->diario->title; ?></h2>
+			
+			<p><?= $this->diario->description;?> </p>
+			
+			
+			<p class="small mb0"><a href="#" title="Tignes" >Tignes</a> | 10 fotos <span class="secundario">| Publicado el sábado, 27 de agosto de 2011 a las 19.35
+			
+			<br />Modificado el domingo, 28 de agosto de 2011 a las 18.58</span>
+			
+			<br /><span class="votos secundario"><span class="icon pngfix"></span>a 3 viajeros les gusta este álbum</span>
+			&nbsp; &nbsp;<span class="comentarios secundario"><span class="icon pngfix"></span>5 comentarios en total</span>
+			</p>
+			
+	</div>
+</div>
+
+
+<?php 
+	$count=0;
+	foreach ($this->capitulos as $capitulo) 
+{
+	$count++;
+?>
+
+<div class="diario_wrap">
+	<div class="diario">
+ 
+ 			<p>Capitulo <?= $count;?></p>
+			
+			<h2 class="titulo mt5"><?= $capitulo->title; ?></h2>
+			
+			<p><?= $capitulo->content;?> </p>
+			
+			
+		
+			<br />Creado <?= $capitulo->creationdate;?> </span>
+			
+			</p>
+			
+	</div>
+</div>
+
+
+<?php 
+}
+?>
+

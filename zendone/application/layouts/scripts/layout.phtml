@@ -18,17 +18,20 @@
 
 <body>
 
-	<div id="header"> <div id="logged-in-as">
-		<?php echo $this->loggedInAs(); ?> </div>
-	</div>
+	
 
 
  <div class="page_margins">
     <div class="page">
     
       <!-- begin: #header -->
-	  <div id="header">
-      	<h1>Tibco platform monitoring</h1>
+	  <div id="header" style="height: 65px;">
+      	<h1 style="float: left;">Tibco platform monitoring</h1>
+      	
+      	<div id="login" style="float: right;">
+			<?php echo $this->loggedInAs(); ?>
+		</div> 
+	
       </div>
 	  
 	  <!-- begin: #nav -->

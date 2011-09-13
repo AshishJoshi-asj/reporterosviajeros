@@ -335,4 +335,85 @@ font-weight: bold;
 	-pie-background: linear-gradient(top,#C8F1FA,#DCF6FC,#EFFBFE);
   }
   
+  
+  
+  
+ 
+  
+  
+  
+.diario_wrap{
+/*	width: 630px;*/
+	margin: 60px auto;
+	border: 1px dashed red;
+	display: block;
+	
+	padding: 30px 30px;
+	background: #c9d0de; 
+	border: 1px solid #e1e1e1;
+		
+	-moz-box-shadow: 0px 0px 8px #444;
+	-webkit-box-shadow: 0px 0px 8px #333;
+	border-radius: 4px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+}
+
+.diario h2 a {
+	text-decoration: none!important;
+}
+
+.diario .col1
+{
+	float: left;
+}
+
+.diario .col2
+{
+	margin-left: 104px;
+}
+
+.destacado {
+	color: #F26C04;
+}
+
+.secundario {
+	color: #79808e;
+}
+
+.derecha {
+	float: right;
+}
+
+.mt0 {
+	margin-top: 0!important;
+}
+
+.small {
+	font-size: 0.90em;
+	font-family: Tahoma, "Free Serif", "Lucida Grande", "Lucida Sans Unicode",sans-serif;
+	line-height: 1.5em;
+}
+
+.foto{
+	padding: 3px;
+	border: solid 1px #fff;
+	background-color: white;
+	display: block;
+	border-top-color: #DFDDD1;
+	border-left-color: #DFDDD1;
+	-webkit-box-shadow: 0px 0px 80px #333;
+	-moz-box-shadow: 0px 0px 80px #333;
+	box-shadow: 1px 1px 3px rgba(20,16,15,0.1);
+}
+
+.span.votos span.icon {
+	background: url(images/sprite_ico_acciones.png) -32px -64px no-repeat;
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	margin-bottom: -1px;
+	margin-right: 5px;
+	font-size: 1px;
+}
+  
+  
 }

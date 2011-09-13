@@ -1,32 +1,105 @@
 
+<!-- 
 <div class="subcolumns">
 	<div class="c80l">
 		<div class="subcl">
 			<h2>Diarios de viaje</h2>
 			<p>Relatos de viajes destacados publicados o actualizados recientemente.<br>
-			Hay <?= $this->numDiarios ?> <?php if ($this->numDiarios > 1) echo "diarios"; else echo "diario"; ?> (21.606 capitulos)</p>
+			En total hay <?= $this->numDiarios ?> 
+			    <?php if ($this->numDiarios > 1) echo "diarios"; else echo "diario"; ?> 
+			    (<?= $this->numCapitulos ?>
+			    <?php if ($this->numCapitulos > 1) echo "capitulos"; else echo "capitulo"; ?> 
+			    )
+			</p>
 		</div>
 	</div>
 			
 	<div class="c20r">
 		<div class="subcr">
 			<div class="boton">
-				<a href="http://www.viajeros.com/usuarios/registro.html">Escribir un diario</a>
+				<a href="/diarios/index/escribirdiario">Escribir un diario</a>
 			</div>
 		</div>
 	</div>		        
 </div>
+ -->
+ 
+<div style="margin-top: 10px; margin-bottom: 0px; border: 0px solid #777; height: 100px;">
+	<div style="float: left; border: 0px solid #555;">
+		<div>
+			<h2 style="margin-top: 0px!important;">Diarios de viaje</h2>
+			<p>Relatos de viajes destacados publicados o actualizados recientemente.<br>
+				En total hay <?= $this->numDiarios ?> 
+			<?php if ($this->numDiarios > 1) echo "diarios"; else echo "diario"; ?> 
+			   	(<?= $this->numCapitulos ?>
+				    <?php if ($this->numCapitulos > 1) echo "capitulos"; else echo "capitulo"; ?> 
+			    	)
+			</p>
+		</div>
+	</div>
+			
+	<div style="float: right; border: 0px solid #555;">
+		<div>
+			<div class="boton">
+				<a href="/diarios/index/escribirdiario">Escribir un diario</a>
+			</div>
+		</div>		        
+	</div>
+</div>
+
+<div style="clear: both;"></div> 
+ 
         	
 <br>
 
-<table>
-	<tr>
-		<th>Num.</th>
-		<th>Titulo</th>
-		<th>Descripci&oacuten</th>
-	</tr>
-	<?php echo $this->partialLoop('index/table-row.phtml', $this->users); ?>
-</table>
+
+
+<?php 
+
+foreach ($this->diarios as $diario) {
+
+	?>
+	
+	
+<div class="diario_wrap">
+	<div class="diario">
+		<div class="col1">		
+			<a href="#">
+				<img class="foto" src="images/tignes1.jpg" alt="Tignes 2010" width="84">
+			</a>
+		</div>
+		
+		<div class="col2">
+ 		
+			<p class="derecha secundario small mt0"> ( 
+			<a href="<?php echo "/diarios/index/editar/id/".$diario->id; ?>"> Editar / Agregar capítulo </a>  | 
+			<a href="<?php echo "/diarios/ver/index/id/".$diario->id; ?>"> Ver </a> | Borrar</a> )</p>		<p class="destacado mt0">Diario de viaje</p>
+			
+			<h2 class="titulo mt5"><?= $diario->title; ?></h2>
+			
+			<p><?= $diario->description ;?> </p>
+			
+			
+			<p class="small mb0"><a href="#" title="Tignes" >Tignes</a> | 10 fotos <span class="secundario">| Publicado el sábado, 27 de agosto de 2011 a las 19.35
+			
+			<br />Modificado el domingo, 28 de agosto de 2011 a las 18.58</span>
+			
+			<br /><span class="votos secundario"><span class="icon pngfix"></span>a 3 viajeros les gusta este álbum</span>
+			&nbsp; &nbsp;<span class="comentarios secundario"><span class="icon pngfix"></span>5 comentarios en total</span>
+			</p>
+			
+		</div>
+	</div>
+</div>
+
+<?php 
+	;
+}
+
+?>
+
+
+
 
 
 <div class="recuadro recuadro-destacado clearfix ">
