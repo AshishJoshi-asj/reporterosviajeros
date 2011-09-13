@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+	<style type="text/css">
+
+body, div, h1, form, fieldset, input, textarea {
+	margin: 0; padding: 0; border: 0; outline: none;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	background: #728eaa;
+	background: -moz-linear-gradient(top, #25303C 0%, #728EAA 100%); /* firefox */	
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#25303C), color-stop(100%,#728EAA)); /* webkit */
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#25303C', endColorstr='#728EAA'); /* IE6 & IE7 */
+  	/*-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#e6e6e6', endColorstr='#CCCCCC')"; /* IE8 */	
+	zoom: 1;	
+	font-family: sans-serif;
+	
+	font-size: 76%;
+	line-height: 150%;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #151515;	
+	 
+}
+
+a:link, a:visited {
+	color: #5E768D;
+}
+a, a:link, a:visited, a:active {
+	text-decoration: underline;
+}
+a:hover{
+	color: #3E566D;
+	text-decoration:none
+}
+
+
+#escribir_capitulo {
+	width: 530px; 
+	margin: 60px auto; 
+	padding: 60px 30px;
+	background: #c9d0de; 
+	border: 1px solid #e1e1e1;
+		
+	-moz-box-shadow: 0px 0px 80px #444;
+	-webkit-box-shadow: 0px 0px 80px #333;
+	border-radius: 4px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+}
+
+h1 {
+	font-size: 35px; color: #445668; text-transform: uppercase;
+	text-align: center; margin: 0 0 35px 0; text-shadow: 0px 1px 0px #f2f2f2;
+}
+
+label {
+	float: left; 
+	clear: left; 
+	margin: 11px 5px 0 0; 
+	width: 95px;
+	text-align: right; 
+	font-size: 14px; 
+	color: #445668; 
+	/*text-transform: uppercase;*/ 
+	text-shadow: 0px 1px 0px #f2f2f2;
+}
+
+input {
+	width: 360px; 
+	height: 35px; 
+	padding-top: 5px;
+	padding-right: 20px;
+	padding-bottom: 0px;
+	padding-left: 20px; 
+	margin: 0 0 10px 0;
+	background: #5E768D;
+	background: -moz-linear-gradient(top, #546A7F 0%, #5E768D 20%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#546A7F), color-stop(20%,#5E768D)); /* webkit */
+	border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+	-moz-box-shadow: 0px 1px 0px #f2f2f2;-webkit-box-shadow: 0px 1px 0px #f2f2f2;
+	font-family: sans-serif; 
+	font-size: 14px; 
+	color: #f2f2f2; 
+	/*text-transform: uppercase;*/ 
+	text-shadow: 0px -1px 0px #334f71; 
+}
+
+	input::-webkit-input-placeholder  {
+    	color: #a1b2c3; text-shadow: 0px -1px 0px #38506b;  
+	}
+	input:-moz-placeholder {
+	    color: #a1b2c3; text-shadow: 0px -1px 0px #38506b; 
+	}
+	
+
+textarea {
+	width: 360px; height: 170px; padding: 12px 20px 0px 20px; margin: 0 0 20px 0; 
+	background: #5E768D;
+	background: -moz-linear-gradient(top, #546A7F 0%, #5E768D 20%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#546A7F), color-stop(20%,#5E768D)); /* webkit */
+	border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+	-moz-box-shadow: 0px 1px 0px #f2f2f2;-webkit-box-shadow: 0px 1px 0px #f2f2f2;
+	font-family: sans-serif; font-size: 14px; color: #f2f2f2; 
+	/*text-transform: uppercase; */
+	text-shadow: 0px -1px 0px #334f71; 
+}
+	textarea::-webkit-input-placeholder  {
+    	color: #a1b2c3; text-shadow: 0px -1px 0px #38506b;  
+	}
+	textarea:-moz-placeholder {
+	    color: #a1b2c3; text-shadow: 0px -1px 0px #38506b; 
+	}
+	
+input:focus, textarea:focus {
+	background: #728eaa;
+	background: -moz-linear-gradient(top, #668099 0%, #728eaa 20%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#668099), color-stop(20%,#728eaa)); /* webkit */
+}
+
+input[type=submit] {
+	width: 85px; height: 22px; float: right; padding: 0px 15px; margin: 0 15px 0 0;
+	-moz-box-shadow: 0px 0px 5px #999;-webkit-box-shadow: 0px 0px 5px #999;
+	border: 1px solid #556f8c;
+	background: -moz-linear-gradient(top, #718DA9 0%, #415D79 100%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#718DA9), color-stop(100%,#415D79)); /* webkit */
+	cursor: pointer;
+}
+
+
+
+.diario_wrap{
+	width: 630px;
+	margin: 60px auto;
+	border: 1px dashed red;
+	display: block;
+	
+	padding: 30px 30px;
+	background: #c9d0de; 
+	border: 1px solid #e1e1e1;
+		
+	-moz-box-shadow: 0px 0px 80px #444;
+	-webkit-box-shadow: 0px 0px 80px #333;
+	border-radius: 4px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+}
+
+.diario h2 a {
+	text-decoration: none!important;
+}
+
+.diario .col1
+{
+	float: left;
+}
+
+.diario .col2
+{
+	margin-left: 104px;
+}
+
+.destacado {
+	color: #F26C04;
+}
+
+.secundario {
+	color: #79808e;
+}
+
+.derecha {
+	float: right;
+}
+
+.mt0 {
+	margin-top: 0!important;
+}
+
+.small {
+	font-size: 0.90em;
+	font-family: Tahoma, "Free Serif", "Lucida Grande", "Lucida Sans Unicode",sans-serif;
+	line-height: 1.5em;
+}
+
+.foto{
+	padding: 3px;
+	border: solid 1px #fff;
+	background-color: white;
+	display: block;
+	border-top-color: #DFDDD1;
+	border-left-color: #DFDDD1;
+	-webkit-box-shadow: 0px 0px 80px #333;
+	-moz-box-shadow: 0px 0px 80px #333;
+	box-shadow: 1px 1px 3px rgba(20,16,15,0.1);
+}
+
+.span.votos span.icon {
+	background: url(images/sprite_ico_acciones.png) -32px -64px no-repeat;
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	margin-bottom: -1px;
+	margin-right: 5px;
+	font-size: 1px;
+}
+
+	</style>
+
+	<meta charset="ISO-8859-1">
+	<title>Insert title here</title>
+
+</head>
+
+
+
+
+
+
+<body>
+
+<div id="escribir_capitulo"> 
+	<!-- <h1>Send an email</h1>--> 
+	<form action="#" method="post"> 
+		<fieldset> 
+			<label for="name">Name:</label> 
+			<input type="text" id="name" placeholder="Escribe aquí el título del capitulo" /> 
+			
+			<label for="lugar">Lugar:</label> 
+			<input type="lugar" id="lugar" placeholder="Selecciona el lugar donde transcurre este capitulo" /> 
+			
+			<label for="fecha">Fecha:</label> 
+			<input type="fecha" id="fecha" placeholder="Fecha en la que ocurrio este capítulo" />			
+			
+			<label for="mensaje">Mensaje:</label> 
+			<textarea id="mensaje" placeholder="Texto del capítulo"></textarea> 
+			
+			<input type="submit" value="Enviar" /> 
+			
+		</fieldset> 
+	</form> 
+</div> 
+
+
+<div class="diario_wrap">
+	<div class="diario">
+		<div class="col1">		
+			<a href="#">
+				<img class="foto" src="images/tignes1.jpg" alt="Tignes 2010" width="84">
+			</a>
+		</div>
+		
+		<div class="col2">
+ 		
+			<p class="derecha secundario small mt0"> ( Editar / Agregar capítulo | Borrar</a> )</p>		<p class="destacado mt0">Diario de viaje</p>
+			
+			<h2 class="titulo mt5"><a href="http://www.viajeros.com/fotos/tignes-2010">Tignes 2010</a></h2>
+			
+			<p>Se trata de un viaje de 4 días, que para empezar, apunto estuvimos de perder.</p>
+			
+			<p class="small mb0"><a href="#" title="Tignes" >Tignes</a> | 10 fotos <span class="secundario">| Publicado el sábado, 27 de agosto de 2011 a las 19.35
+			
+			<br />Modificado el domingo, 28 de agosto de 2011 a las 18.58</span>
+			
+			<br /><span class="votos secundario"><span class="icon pngfix"></span>a 3 viajeros les gusta este álbum</span>
+			&nbsp; &nbsp;<span class="comentarios secundario"><span class="icon pngfix"></span>5 comentarios en total</span>
+			</p>
+			
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

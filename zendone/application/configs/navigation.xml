@@ -23,8 +23,12 @@
 		</contact>
 		<registrar>
 			<label>Registrate</label>
-			<uri>/login</uri>
+			<uri>/auth/registrar</uri>
 		</registrar>
+		<login>
+			<label>Login</label>
+			<uri>/auth/login</uri>
+		</login>		
 		<sitemap>
 			<label>Site map</label>
 			<uri>/index/sitemap</uri>

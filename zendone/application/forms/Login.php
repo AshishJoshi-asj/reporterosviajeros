@@ -5,23 +5,28 @@ class Form_Login extends Zend_Form
 
     public function init()
     {
-        $author = new Zend_Form_Element_Text('username');
-        $author->setLabel('Nombre de usuario: ');
-        $author->setRequired(TRUE);
-        //$author->setAttrib('size', 30);
-        $this->addElement($author);
+        $username = new Zend_Form_Element_Text('username');
+        $username->setLabel('Nombre de usuario: ');
+        $username->setRequired(TRUE);
+        $username->setFilters(array(new Zend_Filter_StringTrim(), new Zend_Filter_StringToLower()));
+		$username->addValidator('StringLength', false, array(0, 50));
+        $username->setAttrib('maxLength', 50);
+        $this->addElement($username);
         
         
-        $email = new Zend_Form_Element_Password('password');
-        $email->setLabel('Password: ');
-        $email->setRequired(TRUE);       
-        $this->addElement($email);
+        $password = new Zend_Form_Element_Password('password');
+        $password->setLabel('Password: ');
+        $password->setRequired(TRUE);
+        $password->addFilters(array(new Zend_Filter_StringTrim()));
+        $password->addValidator('StringLength', false, array(0, 50));
+        $password->setAttrib('maxLength', 50);
+        $this->addElement($password); 
 
         $submit = new Zend_Form_Element_Submit('submit');
         $submit->setLabel('Entrar');
         //$submit->setA
 
-        $this->addElement('submit','login/index/index', array('label' => 'Submit'));
+        $this->addElement('submit','default/index/index', array('label' => 'Submit'));
     }
 
 
